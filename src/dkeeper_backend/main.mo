@@ -1,5 +1,6 @@
 import List "mo:base/List";
 import Text "mo:base/Text";
+import Debug "mo:base/Debug";
 
 
 actor DKeeper {
@@ -18,7 +19,8 @@ actor DKeeper {
       content = contentText; 
     };
 
-    notes := List.push(newNote, notes)
+    notes := List.push(newNote, notes);
+    Debug.print(debug_show(notes))
 
 
   };
